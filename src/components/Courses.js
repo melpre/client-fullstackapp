@@ -17,7 +17,7 @@ export default function Courses() {
             // catch catches and handles specified error and response
             try {
                 // const response = await fetch('http://localhost:5000/api/courses') //Pass the URL to the fetch API
-                const response = await fetch('http://localhost:8000/api/courses') // new port 8000
+                const response = await fetch('http://localhost:8001/api/courses') // new port 8001
                 const courses = await response.json(); //Parse response to JSON
                 setCourses(courses.courses) //Update state to data fetched from API
                     

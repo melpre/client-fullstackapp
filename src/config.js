@@ -2,7 +2,7 @@
 
 const config = {
     // apiBaseUrl: 'http://localhost:5000/api',
-    apiBaseUrl: 'http://localhost:8001/api', // test new port number 8001
+    apiBaseUrl: 'https://server-courses-app.herokuapp.com/', // connect to Heroku server app
 };
 
 export default config;

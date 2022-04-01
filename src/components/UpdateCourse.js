@@ -31,7 +31,7 @@ export default class UpdateCourse extends Component {
 
         // Fetch course detail
         // fetch(`http://localhost:5000/api/courses/${urlParam}`)
-           fetch(`http://localhost:8001/api/courses/${urlParam}`) // new port 8001
+           fetch(`https://server-courses-app.herokuapp.com/${urlParam}`) // Fetch from API hosted on Heroku
             // Parse response to JSON
             .then((response) => response.json())
             // Assign response data to course props

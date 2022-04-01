@@ -17,7 +17,7 @@ export default function Courses() {
             // catch catches and handles specified error and response
             try {
                 // const response = await fetch('http://localhost:5000/api/courses') // Pass the URL to the fetch API
-                const response = await fetch('https://server-courses-app.herokuapp.com/') // Fetch from API hosted on Heroku
+                const response = await fetch('https://server-courses-app.herokuapp.com/api/courses') // Fetch from API hosted on Heroku
                 const courses = await response.json(); //Parse response to JSON
                 setCourses(courses.courses) //Update state to data fetched from API
                     

@@ -33,7 +33,7 @@ export default function CourseDetail(props) {
             const urlParam = currentURL.substring(30);
             try {
                 // const response = await fetch(`http://localhost:5000/api/courses/${urlParam}`);
-                const response = await fetch(`https://server-courses-app.herokuapp.com/${urlParam}`); // Fetch from API hosted on Heroku
+                const response = await fetch(`https://server-courses-app.herokuapp.com/api/courses/${urlParam}`); // Fetch from API hosted on Heroku
                 const data = await response.json();
                 const {
                     id,

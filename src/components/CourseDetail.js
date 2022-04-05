@@ -34,8 +34,6 @@ export default function CourseDetail(props) {
             try {
                 // const response = await fetch(`http://localhost:5000/api/courses/${urlParam}`);
                 const response = await fetch(`https://server-courses-app.herokuapp.com/api/courses/${urlParam}`); // Fetch from API hosted on Heroku
-                // check what substring is being extracted
-                console.log(urlParam);
                 const data = await response.json();
                 const {
                     id,

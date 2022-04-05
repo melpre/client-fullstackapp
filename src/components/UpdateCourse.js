@@ -27,7 +27,9 @@ export default class UpdateCourse extends Component {
 
         // Declare var to store url param 'id'
         const currentURL = window.location.href;
-        const urlParam = currentURL.substring(30, 32);
+        const urlParam = currentURL.substring(49,51);
+        
+        console.log(urlParam); //check url param matches id
 
         // Fetch course detail
         // fetch(`http://localhost:5000/api/courses/${urlParam}`)

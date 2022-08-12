@@ -30,12 +30,9 @@ export default function CourseDetail(props) {
         async function fetchCourse()  {
             // Declare var to hold url param 'id'
             const currentURL = window.location.href;
-            const urlParam = currentURL.substring(51);
-            // console.log(currentURL);
-            // console.log(urlParam);
             try {
                 // const response = await fetch(`http://localhost:5000/api/courses/${urlParam}`);
-                const response = await fetch(`https://server-courses-app.herokuapp.com/api/courses/${urlParam}`); // Fetch from API hosted on Heroku
+                const response = await fetch(currentURL); // Fetch from API hosted on Heroku
                 const data = await response.json();
                 const {
                     id,

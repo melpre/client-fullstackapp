@@ -17,7 +17,7 @@ export default function PrivateRoute({ component: Component, ...rest }) { // ins
                 ) : (
                   <Redirect to={{ // if false, redirect to '/signin'
                     pathname: '/signin',
-                    state: { from: props.location }, // (E.C. #3) store state property of user's current 'location' (if authenticated, user will be re-directed to previous location) 
+                    state: { from: props.location }, // store state property of user's current 'location' (if authenticated, user will be re-directed to previous location) 
                   }} />
                 )
               }

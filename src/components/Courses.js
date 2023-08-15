@@ -13,22 +13,23 @@ export default function Courses() {
     // Call useEffect() to fetch API data: courses list
     useEffect(() => {
         async function fetchCourses() {
-            // Note: try block tests if there's an exception thrown, if none, set state to fetched course data 
-            // catch catches and handles specified error and response
+            // Note: 'try block' tests if there's an exception thrown, if none, set state to fetched course data 
+            // 'catch' catches and handles specified error and response
             try {
-                // const response = await fetch('http://localhost:5000/api/courses') // Pass the URL to the fetch API
-                const response = await fetch('https://server-courses-app.herokuapp.com/api/courses') // Fetch from API hosted on Heroku
+                const response = await fetch('http://localhost:5000/api/courses') // Pass the URL to the fetch API
+                // const response = await fetch('https://server-courses-app.herokuapp.com/api/courses') // Fetch from API hosted on Heroku
                 const courses = await response.json(); //Parse response to JSON
+                // console.log(courses);
                 setCourses(courses.courses) //Update state to data fetched from API
                     
             // Catch any errors thrown from the fetch call
             } catch (error) {
                 setError(error);
-                console.log(error.message); // LOG STATEMENT
+                console.log(error.message);
                 return error;
             }
         }
-        fetchCourses(); // call fetchCourses()
+        fetchCourses();
     }, []);
 
     // LOG STATEMENTS

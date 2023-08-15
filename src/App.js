@@ -6,11 +6,10 @@
 
 
 /******************************************
-Treehouse FSJS Techdegree:
-project 10 - Full Stack App using React and a REST API
+Full Stack App using React and a REST API
 by Melissa Preece
 
-// Requirements for 'Exceeds Expectations' grade:
+Notable features:
 // 1. Display user friendly messages
       // See files: NotFound.js, Forbidden.js, and UnhandledError.js
       // See file App.js, lines 77-80

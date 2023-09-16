@@ -113,7 +113,6 @@ export default function CourseDetail(props) {
     // Mark up of returned course's details
     return (
         <main>
-            {/* E.C. #1 */}
             {error ? (
                 <Redirect to="/notfound" />
             ) : (

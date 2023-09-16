@@ -1,3 +1,6 @@
+/* TODO: CHange this component into a function component */
+
+
 /* STATEFUL CLASS COMPONENT */
 
 import React, { Component } from 'react';
@@ -138,7 +141,7 @@ export default class CreateCourse extends Component {
                     this.props.history.push('/');
                 }
             })
-            .catch( error => { // handle errors (rejected promises) from server side (E.C. #1)
+            .catch( error => { // handle errors (rejected promises) from server side
                 console.log(error);
                 this.props.history.push('/error');
             })

@@ -1,3 +1,6 @@
+/* TODO: CHange this component into a function component */
+
+
 /* STATEFUL CLASS COMPONENT */
 
 import React, { Component } from 'react';

@@ -29,7 +29,7 @@ a {
     padding: 0 1rem;
 }
 header {
-    background: #c72838;
+    background-image: linear-gradient(to right, #c72838, rgb(255, 157, 0));
     color: #fff;
     padding: 1rem 0;
     margin-bottom: 2rem;

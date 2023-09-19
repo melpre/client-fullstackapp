@@ -7,7 +7,7 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  <!-- - [Screenshot](#screenshot) -->
+  - [Screenshot](#screenshot)
   <!-- - [Links](#links) -->
 <!-- - [My process](#my-process) -->
   <!-- - [Built with](#built-with) -->
@@ -20,6 +20,7 @@
 
 ## Overview
 
+
 ### The challenge
 
 Users should be able to: 
@@ -27,3 +28,16 @@ Users should be able to:
 - log in and out successfully in stored cookie sessions that dynamically render elements on the page 
 - manage their course information (e.g. create, read, update and delete) and updates a MYSQL database
 - connects to an API that fetches course and user info from a MYSQL database
+
+
+### Screenshot
+
+![](./src/images/courses-directory-home-screenshot.png)
+
+![](./src/images/courses-directory-detail-screenshot.png)
+
+![](./src/images/courses-directory-signin.png)
+
+![](./src/images/courses-directory-signup.png)
+
+![](./src/images/courses-directory-notfound.png)
